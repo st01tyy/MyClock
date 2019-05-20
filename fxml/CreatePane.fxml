@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.CreatePane">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="600.0">
+         <children>
+            <Label text="闹钟名称">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtfield_name" focusTraversable="false" prefHeight="30.0" prefWidth="240.0">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets left="100.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="600.0">
+         <children>
+            <Label text="闹钟时间">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtfield_hour" focusTraversable="false" prefHeight="30.0" prefWidth="50.0">
+               <HBox.margin>
+                  <Insets left="20.0" right="5.0" />
+               </HBox.margin>
+            </TextField>
+            <Label text="时">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="25.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtfield_minute" focusTraversable="false" prefHeight="30.0" prefWidth="50.0">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </TextField>
+            <Label text="分">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets left="100.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="600.0">
+         <children>
+            <Label text="铃声">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtfield_path" editable="false" focusTraversable="false" prefHeight="30.0" prefWidth="253.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </TextField>
+            <Button fx:id="btn_choose" focusTraversable="false" mnemonicParsing="false" prefHeight="30.0" text="选择">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets left="100.0" top="15.0" />
+         </VBox.margin>
+      </HBox>
+      <Pane prefHeight="106.0" prefWidth="600.0">
+         <children>
+            <JFXButton fx:id="btn_confirm" focusTraversable="false" layoutX="260.0" layoutY="14.0" prefHeight="50.0" prefWidth="80.0" style="-fx-background-color: yellow;" text="确定">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="label_error" focusTraversable="false" layoutX="237.0" layoutY="64.0" text="输入信息无效！" textFill="RED" visible="false">
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets top="40.0" />
+         </VBox.margin>
+      </Pane>
+   </children>
+</VBox>

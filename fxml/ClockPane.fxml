@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="500.0" style="-fx-border-color: white white black white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.ClockPane">
+   <children>
+      <VBox alignment="CENTER" prefHeight="100.0" prefWidth="102.0">
+         <children>
+            <Label fx:id="label_time" text="00:00">
+               <font>
+                  <Font name="Impact" size="36.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="label_clockName" text="闹钟">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+         <HBox.margin>
+            <Insets left="5.0" />
+         </HBox.margin>
+      </VBox>
+      <JFXButton fx:id="btn_delete" focusTraversable="false" prefHeight="50.0" prefWidth="50.0">
+         <HBox.margin>
+            <Insets left="220.0" />
+         </HBox.margin>
+      </JFXButton>
+      <JFXToggleButton fx:id="toggleButton" focusTraversable="false" prefHeight="100.0" prefWidth="0.0">
+         <HBox.margin>
+            <Insets left="20.0" />
+         </HBox.margin>
+      </JFXToggleButton>
+   </children>
+</HBox>
